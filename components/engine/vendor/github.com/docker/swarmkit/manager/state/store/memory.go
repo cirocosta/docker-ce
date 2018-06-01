@@ -45,7 +45,7 @@ const (
 	MaxChangesPerTransaction = 200
 
 	// MaxTransactionBytes is the maximum serialized transaction size.
-	MaxTransactionBytes = 1.5 * 1024 * 1024
+	MaxTransactionBytes = 15 * 1024 * 1024
 )
 
 var (
