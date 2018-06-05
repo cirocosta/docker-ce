@@ -623,6 +623,7 @@ func (options *serviceOptions) ToService(ctx context.Context, apiClient client.N
 				Groups:     options.groups.GetAll(),
 				StopSignal: options.stopSignal,
 				TTY:        options.tty,
+        Privileged: options.privileged,
 				ReadOnly:   options.readOnly,
 				Mounts:     options.mounts.Value(),
 				DNSConfig: &swarm.DNSConfig{
